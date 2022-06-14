@@ -1,66 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Sacramento&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+
+.parent{
+    height:700px ;
+    width: 700px;
+    background-color: seagreen;
+    position: relative;
 }
-.title{
+
+/* .bx1{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    margin: 5px;
+}
+.bx2{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    margin: 5px;
+}
+.bx3{
+    height: 100px;
+    width: 100px;
     background-color: teal;
-    color: aliceblue;
-    /* inner spacing   */
-    /* padding: 100px; */
-    /* border: 5px solid #000; */
-    /* outer spacing */
-    /* margin: 10px; */
+    margin: 5px;
+} */
+
+
+/* static / relative / absolute / fixed / sticky*/
+
+/* t r b l */
+
+
+.bx{
+    font-size: 30px;
+    color:#fff;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
 }
-
-/* padding */
-.title{
-   /* padding-top: 20px; 
-   padding-right: 40px; 
-   padding-bottom: 50px; 
-   padding-left: 70px;  */
+.bx1{
+ background-color:teal ; 
 
 
-   /* shorthand */
-
-   /* for all sides */
-   /* padding: 20px; */
-
-/* for t/b  l/R */
-   /* padding: 10px 40px; */
-
-   /* t l/r b */
-   /* padding: 10px 20px 40px; */
+ /* document flow ❌ */
 
 
-   /* t r b l */
-    /* padding: 10px 30px 40px 60px; */
+ /* position:fixed ;  
+ bottom:0;
+ right:0; */
+}
+.bx2{
+ background-color: crimson; 
+ /* position: static;  
+ left:100px; */
+
+/* position relative */
+/* document flow ✔ */
+/* position: relative;
+left:200px;
+top:100px; */
 
 
-    margin: 10px;
-
-
-/* 
-✔
-border: 2px solid black; */
-    
-
-/* ❌ */
-/* border-width: 10px;
-border-style: double;
-border-color: tomato; */
-
-/* border-top-width: 20px;
-border-top-style: dashed;
-border-top-color: chocolate; */
-/* border-left-width: 10px;
-border-left-style: double;
-border-left-color: chartreuse; */
-
-
-
-/* ✔ */
-/* border-top: 2px dashed blue; */
+/* position fixed */
+/* position: fixed; */
 
 }
+.bx3{
+
+
+    /* position absolute > document flow ❌  */
+
+    /* while using position absolute always give the parent a position relative */
+
+    /* position: absolute;
+right:100px;
+bottom: 0; */
+
+
+
+position: absolute;
+right:50px;
+
+
+    /* document flow ✔❌ */
+    /* position: sticky;
+    top:20px; */
+
+
+ background-color: orange;   
+}
+
